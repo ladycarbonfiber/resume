@@ -19,7 +19,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[letterpaper]{deedy-resume-openfont} % Use US Letter paper, change to a4paper for A4 
+\documentclass[letterpaper]{deedy-resume-openfont} % Use US Letter paper, change to a4paper for A4
 
 \begin{document}
 
@@ -29,11 +29,13 @@
 
 \lastupdated % Print the Last Updated text at the top right
 
+%\namesection{Thomas}{Wells}
 \namesection{Elizabeth}{Wells}
 {
 %\urlstyle{same}\url{} \\ % Your website, LinkedIn profile or other web address
 US citizen \\
-\href{<new email?>}{<new email?>} | 929.256.2382 
+%\href{mailto:thomas.wells@protonmail.ch}{thomas.wells@protonmail.ch} | 929.256.2382
+\href{mailto:liz.wells@protonmail.com}{liz.wells@protonmail.com} | 929.256.2382
 }
 
 %----------------------------------------------------------------------------------------
@@ -46,18 +48,18 @@ US citizen \\
 % Education
 %------------------------------------------------
 
-\section{Education} 
+\section{Education}
 %\subsection{Georgia Institute}
 %\subsection{of Technology}
 
 %\descript{MS Computer Science}
 %\location{ Ongoing Online Program:\\ May 2019 (expected)}
-%\sectionspace 
+%\sectionspace
 \subsection{Georgia Institute}
 \subsection{of Technology}
 
 \descript{BS Electrical Engineering}
-\location{ May 2015 | Atlanta, GA \\ Cum. GPA: 3.64/4.0 \\
+\location{ May 2015 | Atlanta, GA \\ %Cum. GPA: 3.64/4.0 \\
 Highest Honors}
 
 %\sectionspace % Some whitespace after the section
@@ -80,13 +82,12 @@ Dean's List (All Semesters) \\
 % Links
 %------------------------------------------------
 
-\section{Links} 
+\section{Links}
 
 Github:// \href{https://github.com/lordofcarbonfiber}{\bf LordofCarbonFiber } \\
-LinkedIn:// \href{https://www.linkedin.com/in/thomasfwells}{\bf Thomas F Wells} \\
-%YouTube:// \href{https://www.youtube.com/user/}{\bf } \\
-%Twitter:// \href{https://twitter.com}{\bf } \\
-%Quora:// \href{https://www.quora.com}{\bf }
+LinkedIn:// \href{https://www.linkedin.com/in/elizabethswells/s}{\bf Elizabeth S Wells} \\
+Mastodon \href{@liz@mastodon.inferiorlattice.com}{ \bf Liz @ inferiorlattice} \\
+
 
 %\sectionspace % Some whitespace after the section
 
@@ -115,16 +116,16 @@ Unix Tools and Scripting
 \subsection{Programming}
 
 \location{Most Proficient:}
- Java (8+) \textbullet{} Python \textbullet{} Rust  \textbullet{} Matlab  \\
+ Java (8+) \textbullet{} Python \textbullet{} Matlab  \\
 \location{Proficient:}
-C \textbullet{}  C\# \textbullet{} CUDA  \textbullet{} TypeScript \\
+Rust \textbullet{}  C \textbullet{}  C\# \textbullet{} TypeScript \\
  JavaScript\textbullet{} LabView\\
 \location{Familiar:}
-Scala \textbullet{} C++ \textbullet{} Julia \textbullet{} PSpice  \textbullet{} PSQL \textbullet{} Elixir \textbullet{} \LaTeX \\
+CUDA  \textbullet{} Scala \textbullet{} C++ \textbullet{} Julia \textbullet{} PSpice  \textbullet{} PSQL \textbullet{} Elixir \textbullet{} \LaTeX \\
 \location {Testing:}
 JUnit \textbullet{} Mockito \textbullet{} Pytest \\
 \location {Frameworks:}
-Hadoop Ecosystem \textbullet{} Angular (1/2) \textbullet{} Phoenix (Elixir) \textbullet{} Flask\\
+Spring \textbullet{} Hadoop Ecosystem \textbullet{} Phoenix (Elixir) \textbullet{} Flask\\
 \location{Infrastructure}
 AWS\textbullet{} Docker
 
@@ -141,12 +142,12 @@ Unix System  Administration
 % Societies
 %------------------------------------------------
 
-\section{Societies} 
+\section{Societies}
 \subsection{Honors}
  Eta Kappa Nu: ECE honors society \\
 %\sectionspace
 \subsection{Professional}
-IEEE Member 
+IEEE Member
 
 \sectionspace % Some whitespace after the section
 
@@ -165,33 +166,44 @@ IEEE Member
 
 \section{Experience}
 
-\runsubsection{T. Rowe Price}\\
-\descript{Software Engineer}
+\runsubsection{Beeswax}\\
+\descript{Web Engineer}
 
-\location{August 2017 - Present | New York, NY}
+\location{April 2019 - Present | New York, NY}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Helmed modernization effort to port successful customer facing API from a custom PHP framework to Django (Python 3.8). Moved data model to be managed by Django migrations and set up facade framework to allow for API transitions
+\item Built parallelized tooling to increase engineer productivity using new python migration framework across multi customer model
+\item Continued developing features for existing PHP API and architecting the path towards entering maintenance
+\end{tightitemize}
+
+\runsubsection{T. Rowe Price}\\
+\descript{Platform Engineer}
+
+\location{August 2017 - March 2019 | New York, NY}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
 \item Developed, tested, and documented core Java framework to accelerate the rollout of GRPC based micro-services. This provides AuthN/Z, service discovery, and request management, allowing application developers to focus only on their business code.
 \item Leveraged above Java custom framework to build cloud native micro-services to collate disparate data and populate a React app, reducing analyst work flow time 95\% (2hr -> 5min)
-%\item Developed Horizon, a portfolio management tool powered by the aforementioned Java framework running as a cloud-native %dockerized Spring-Boot microservice in AWS. Backend Java work collected data from cloud based RDS, on prem MSSQL, and cloud based %GRPC services to expose portfolio modeling to a react powered frontend over both grpc and REST.  This served to reduce analyst %workflow time 95\%. 
-\item Improved internal engineering culture through functional programming evangelism 
+%\item Developed Horizon, a portfolio management tool powered by the aforementioned Java framework running as a cloud-native %dockerized Spring-Boot microservice in AWS. Backend Java work collected data from cloud based RDS, on prem MSSQL, and cloud based %GRPC services to expose portfolio modeling to a react powered frontend over both grpc and REST.  This served to reduce analyst %workflow time 95\%.
+\item Improved internal engineering culture through functional programming evangelism
 
 \end{tightitemize}
-\sectionspace % Some whitespace after the section
+%\sectionspace % Some whitespace after the section
 
 \runsubsection{Enigma}\\
-\descript{Software Engineer}
+\descript{API Engineer}
 
 \location{September 2016 - August 2017 | New York, NY}
 %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
-\item Developed API for enterprise data lake search and exploration powered by Python Flask and Elastic Search
+\item Developed REST API for enterprise data lake search and exploration powered by Python Flask and Elastic Search
 \item Delivered scalable product to be deployed both on enterprise internal servers and a public AWS cloud using both legacy
-Ansible scripts and docker based containers. 
+Ansible scripts and docker based containers.
 \item Designed Taskflow (python workflow framework) scheduling to coordinate ingestion of multi-TB sized datasets
 
 \end{tightitemize}
-\sectionspace % Some whitespace after the section
+%\sectionspace % Some whitespace after the section
 
 \runsubsection{JP Morgan Chase}\\
 \descript{Software Engineer | Asset Management}
@@ -204,15 +216,15 @@ Ansible scripts and docker based containers.
 \item Spearheaded development of an website, built on Angular 2 and Node.js, to advertise our team internally, and presented website to a Managing Director
 \end{tightitemize}
 
-\sectionspace % Some whitespace after the section
-\runsubsection{Atlanta Neighborhood Development Partnership}
-\descript{Probono consulting and software development}
-\location{Jan 2014 – July 2014 | Atlanta, GA}
-\begin{tightitemize}
-\item  Lead a team that designed a system written in C\# to calculate ROI for community funded non-profit efforts in the area of foreclosed real estate.
-\item Met with local government to determine project deliverables.
-\item Evaluated parcel pricing for creating a community sponsored area improvement fund.
-\end{tightitemize}
+% \sectionspace % Some whitespace after the section
+% \runsubsection{Atlanta Neighborhood Development Partnership}
+% \descript{Probono consulting and software development}
+% \location{Jan 2014 – July 2014 | Atlanta, GA}
+% \begin{tightitemize}
+% \item  Lead a team that designed a system written in C\# to calculate ROI for community funded non-profit efforts in the area of foreclosed real estate
+% \item Met with local government to determine project deliverables
+% \item Evaluated parcel pricing for creating a community sponsored area improvement fund
+% \end{tightitemize}
 %\sectionspace
 
 %\runsubsection{Georgia Tech Research Institute \\ Electronic Systems Lab}\\
@@ -232,7 +244,7 @@ Ansible scripts and docker based containers.
 
 %------------------------------------------------
 %Oldest position, swap for research for professional roles
-% \runsubsection{Fidelity Investments} 
+% \runsubsection{Fidelity Investments}
 % \descript{| Technology Intern}
 
 % \location{May 2012 – Aug 2012 | Boston, MA}
@@ -252,7 +264,7 @@ Ansible scripts and docker based containers.
 %\sectionspace % Some whitespace after the section
 
 %------------------------------------------------
-% Research Add for acedemic positions, remove for job search 
+% Research Add for acedemic positions, remove for job search
 %------------------------------------------------
 
 % \section{Research}
@@ -278,15 +290,15 @@ Ansible scripts and docker based containers.
 % Leadership/Awards
 %------------------------------------------------
 
-\section{Leadership / Awards} 
+\section{Leadership / Awards}
 
 \begin{tabular}{lll}
-T.Rowe Price Corporate Social Responsibility | Dec 2017 - Dec 2018 \\
+Beeswax "Bee Kind" Corporate responsibility ambassador | Dec 2019 - Present \\
+T.Rowe Price Corporate Social Responsibility | Dec 2017 - Mar 2019 \\
 JP Morgan Force For Good | Aug 2015 - Sept 2016 \\
 HKN Lab Supplies Chair | Jan 2014 - Dec 2014 \\
-HKN Webmaster | Jan 2014 - Dec 2014 \\
 ECE Undergraduate Tutoring\\
-Epic Intentions: VP of Internal Affairs | June 2014 - May 2015 \\
+%Epic Intentions: VP of Internal Affairs | June 2014 - May 2015 \\
 %Georgia Tech  Lorraine Student Government Webmaster | Jan 2013 - May 2013 \\
 \end{tabular}
 
