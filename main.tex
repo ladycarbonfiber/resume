@@ -19,7 +19,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[letterpaper]{deedy-resume-openfont} % Use US Letter paper, change to a4paper for A4
+\documentclass[a4paper]{deedy-resume-openfont} % Use US Letter paper, change to a4paper for A4
 
 \begin{document}
 
@@ -29,12 +29,10 @@
 
 \lastupdated % Print the Last Updated text at the top right
 
-%\namesection{Thomas}{Wells}
 \namesection{Elizabeth}{Wells}
 {
 %\urlstyle{same}\url{} \\ % Your website, LinkedIn profile or other web address
 US citizen \\
-%\href{mailto:thomas.wells@protonmail.ch}{thomas.wells@protonmail.ch} | 929.256.2382
 \href{mailto:liz.wells@protonmail.com}{liz.wells@protonmail.com} | 929.256.2382
 }
 
@@ -86,24 +84,11 @@ Dean's List (All Semesters) \\
 
 Github:// \href{https://github.com/lordofcarbonfiber}{\bf LordofCarbonFiber } \\
 LinkedIn:// \href{https://www.linkedin.com/in/elizabethswells/s}{\bf Elizabeth S Wells} \\
-Mastodon \href{@liz@mastodon.inferiorlattice.com}{ \bf Liz @ inferiorlattice} \\
+% Mastodon \href{@liz@mastodon.inferiorlattice.com}{ \bf Liz @ inferiorlattice} \\
 
 
 %\sectionspace % Some whitespace after the section
 
-%------------------------------------------------
-% Coursework
-%------------------------------------------------
-
-\section{Coursework}
-
-\subsection{Undergraduate}
-
-Advanced C++ Topics \\
-Fundamentals of Digital Signal Processing \\
-Audio Engineering \\
- Systems and Controls\\
-Unix Tools and Scripting
 
 \sectionspace % Some whitespace after the section
 
@@ -114,25 +99,32 @@ Unix Tools and Scripting
 \section{Skills}
 
 \subsection{Programming}
-
-\location{Most Proficient:}
- Java (8+) \textbullet{} Python \textbullet{} Matlab  \\
-\location{Proficient:}
-Rust \textbullet{}  C \textbullet{}  C\# \textbullet{} TypeScript \\
- JavaScript\textbullet{} LabView\\
-\location{Familiar:}
-CUDA  \textbullet{} Scala \textbullet{} C++ \textbullet{} Julia \textbullet{} PSpice  \textbullet{} PSQL \textbullet{} Elixir \textbullet{} \LaTeX \\
-\location {Testing:}
-JUnit \textbullet{} Mockito \textbullet{} Pytest \\
+Java (8+) \textbullet{} Python (3.8+) \textbullet{} Rust \\
+ Kotlin \textbullet{} Typescript \textbullet{} Swift \textbullet{} Elixir
+\subsection {Testing:}
+JUnit \textbullet{} Mockito \textbullet{} Pytest \textbullet{} RoboElectric \\ Moto \textbullet{} ExUnit \textbullet{} Jest\\
 \location {Frameworks:}
-Spring \textbullet{} Hadoop Ecosystem \textbullet{} Phoenix (Elixir) \textbullet{} Flask\\
+Spring \textbullet{} Phoenix (Elixir) \textbullet{} Svelte\\ \textbullet{} FastApi\\
 \location{Infrastructure}
-AWS\textbullet{} Docker
+AWS \textbullet{} CDK \textbullet{} Docker \textbullet{} Docker Compose \\
+Postgres  \textbullet{} Nginx
 
 
 \sectionspace % Some whitespace after the section
 
-\subsection{Engineering}
+%------------------------------------------------
+% Coursework
+%------------------------------------------------
+
+\section{Coursework}
+
+Advanced C++ Topics \\
+Fundamentals of Digital Signal Processing \\
+Audio Engineering \\
+ Systems and Controls\\
+Unix Tools and Scripting
+
+\section{Certifications}
 IPC Certified Soldering \\
 IEEE Style Papers \\
 Unix System  Administration
@@ -166,55 +158,92 @@ IEEE Member
 
 \section{Experience}
 
-\runsubsection{Beeswax}\\
-\descript{Web Engineer}
+\runsubsection{Evenup}\\
+\descript{Senior Software Engineer}
 
-\location{April 2019 - Present | New York, NY}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\location{Jan 2024 - Present | Seattle, WA (remote)}
+\vspace{\topsep}
 \begin{tightitemize}
-\item Helmed modernization effort to port successful customer facing API from a custom PHP framework to Django (Python 3.8). Moved data model to be managed by Django migrations and set up facade framework to allow for API transitions
-\item Built parallelized tooling to increase engineer productivity using new python migration framework across multi customer model
-\item Continued developing features for existing PHP API and architecting the path towards entering maintenance
+    \item Scaled Dagster powered document processing workflow 10x (10k - 100k daily documents) 
+    \item Developed provider agnostic LLM agentic workflows for key data extraction
+    \item Created and distributed internal sdks to integrate datascience experiments in parallel with production pipeline work. 66\% reduction in time to deploy new models
 \end{tightitemize}
+
+\runsubsection{Nautilus Biotechnology}\\
+\descript{Senior Software Engineer}
+
+\location{May 2022 - Jan 2024 | Seattle, WA}
+% \vspace{\topsep}
+\begin{tightitemize}
+    \item Lead the data and integrations team in charge of collection, validation, storage and exposing the company's many scientific data
+    \item Built a code framework for building quick start, REST enabled, webapps on top of MS Oauth, Svelte, FastAPI, and AWS to stand up and deploy a constellation (3 and growing) of intercommunicating custom laboratory information management tools. This enabled a tight integration with science teams and expedited migration of their excel based workflows
+    \item Stood up AWS Athena data warehouse and bespoke connectors to unify disparate data stored across the company (Excel, Confluence, Benchling, etc) 
+\end{tightitemize}
+
+\runsubsection{Meta (Facebook Reality Labs)}\\
+\descript{Software Engineer}
+
+\location{April 2020 - March 2022 | New York, NY}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Built JVM sdks to bridge gap between kernel level drivers and developers making user facing experiences as part of a 0-1 effort bring up new wearable hardware
+\item Lead the team to design and develop the media storage sdk in partnership with the computational photography group working on the camera stack
+%\item Worked in partnership on the implementation of notifications, bluetooth, and MCU connectivity sdks
+\item Designed and implemented secure data syncing for managing media transfer from both device to companion phone (Android + iOS) and device to cloud
+\item Optimized the notification experience to allow for 10\% increase in battery life and 95\% delivery  rate with the use of transport proxies and connection management
+\end{tightitemize}
+
+\runsubsection{Beeswax}\\
+\descript{Senior Web Engineer}
+
+\location{April 2019 - April 2020 | New York, NY}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightitemize}
+% \item Helmed modernization effort to port successful customer facing API from a custom PHP framework to Django (Python 3.8). Moved data model to be managed by Django migrations and set up facade framework to allow for API transitions
+% \item Built parallelized tooling to increase engineer productivity using new python migration framework across multi customer model
+% \item Continued developing features for existing PHP API and architecting the path towards entering maintenance
+% \end{tightitemize}
+\sectionspace % Some whitespace after the section
 
 \runsubsection{T. Rowe Price}\\
 \descript{Platform Engineer}
 
 \location{August 2017 - March 2019 | New York, NY}
 %\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightitemize}
-\item Developed, tested, and documented core Java framework to accelerate the rollout of GRPC based micro-services. This provides AuthN/Z, service discovery, and request management, allowing application developers to focus only on their business code.
-\item Leveraged above Java custom framework to build cloud native micro-services to collate disparate data and populate a React app, reducing analyst work flow time 95\% (2hr -> 5min)
-%\item Developed Horizon, a portfolio management tool powered by the aforementioned Java framework running as a cloud-native %dockerized Spring-Boot microservice in AWS. Backend Java work collected data from cloud based RDS, on prem MSSQL, and cloud based %GRPC services to expose portfolio modeling to a react powered frontend over both grpc and REST.  This served to reduce analyst %workflow time 95\%.
-\item Improved internal engineering culture through functional programming evangelism
+% \begin{tightitemize}
+% \item Developed, tested, and documented core Java framework to accelerate the rollout of GRPC based micro-services. This provides AuthN/Z, service discovery, and request management, allowing application developers to focus only on their business code.
+% \item Leveraged above Java custom framework to build aysnc, fault tolerant, cloud-native micro-services to collate disparate data and populate a React app, reducing analyst work flow time 95\% (2hr -> 5min)
+% %\item Configured OpenTelemetry and Graphana to provide alerting for all subscribed company microservices. 
+% %\item Developed Horizon, a portfolio management tool powered by the aforementioned Java framework running as a cloud-native %dockerized Spring-Boot microservice in AWS. Backend Java work collected data from cloud based RDS, on prem MSSQL, and cloud based %GRPC services to expose portfolio modeling to a react powered frontend over both grpc and REST.  This served to reduce analyst %workflow time 95\%.
+% \item Improved internal engineering culture through functional programming evangelism
 
-\end{tightitemize}
-%\sectionspace % Some whitespace after the section
+% \end{tightitemize}
+\sectionspace % Some whitespace after the section
 
 \runsubsection{Enigma}\\
 \descript{API Engineer}
 
 \location{September 2016 - August 2017 | New York, NY}
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightitemize}
-\item Developed REST API for enterprise data lake search and exploration powered by Python Flask and Elastic Search
-\item Delivered scalable product to be deployed both on enterprise internal servers and a public AWS cloud using both legacy
-Ansible scripts and docker based containers.
-\item Designed Taskflow (python workflow framework) scheduling to coordinate ingestion of multi-TB sized datasets
+% %\vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightitemize}
+% \item Developed REST API for enterprise data lake search and exploration powered by Python Flask and Elastic Search
+% \item Delivered scalable product to be deployed both on enterprise internal servers and a public AWS cloud using both legacy
+% Ansible scripts and docker based containers.
+% \item Designed Taskflow (python workflow framework) scheduling to coordinate ingestion of multi-TB sized datasets
 
-\end{tightitemize}
-%\sectionspace % Some whitespace after the section
+%\end{tightitemize}
+\sectionspace % Some whitespace after the section
 
 \runsubsection{JP Morgan Chase}\\
-\descript{Software Engineer | Asset Management}
+\descript{Technology Analyst | Asset Management}
 
 \location{July 2015 - September 2016 | New York, NY}
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightitemize}
-\item Streamlined process for data governance with the creation of a custom suite of tools written in Python for automatic data validation and recording
-\item Built and managed a concurrent Java based tool set for automatically migrating data from SQL server to Greenplum as part of a firm wide move toward big data technologies
-\item Spearheaded development of an website, built on Angular 2 and Node.js, to advertise our team internally, and presented website to a Managing Director
-\end{tightitemize}
+% %\vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightitemize}
+% \item Streamlined process for data governance with the creation of a custom suite of tools written in Python for automatic data validation and recording
+% \item Built and managed a concurrent Java based tool set for automatically migrating data from SQL server to Greenplum as part of a firm wide move toward big data technologies
+% \item Spearheaded development of an website, built on Angular 2 and Node.js, to advertise our team internally, and presented website to a Managing Director
+% \end{tightitemize}
 
 % \sectionspace % Some whitespace after the section
 % \runsubsection{Atlanta Neighborhood Development Partnership}
@@ -240,7 +269,7 @@ Ansible scripts and docker based containers.
 %\item Helped purchasing design a system using Excel to streamline project management, inventory, and ordering.
 %\end{tightitemize}
 
-\sectionspace % Some whitespace after the section
+%\sectionspace % Some whitespace after the section
 
 %------------------------------------------------
 %Oldest position, swap for research for professional roles
@@ -284,20 +313,20 @@ Ansible scripts and docker based containers.
 %------------------------------------------------
 
 
-%\sectionspace % Some whitespace after the section
+\sectionspace % Some whitespace after the section
 
 %------------------------------------------------
 % Leadership/Awards
 %------------------------------------------------
 
-\section{Leadership / Awards}
-
-\begin{tabular}{lll}
-Beeswax "Bee Kind" Corporate responsibility ambassador | Dec 2019 - Present \\
-T.Rowe Price Corporate Social Responsibility | Dec 2017 - Mar 2019 \\
-JP Morgan Force For Good | Aug 2015 - Sept 2016 \\
-HKN Lab Supplies Chair | Jan 2014 - Dec 2014 \\
-ECE Undergraduate Tutoring\\
+%\section{Leadership / Awards}
+\section{Social Good}
+ \begin{tabular}{lll}
+ Beeswax "Bee Kind" Corporate Responsibility Ambassador | Dec 2019 - April 2020 \\
+ T.Rowe Price Corporate Social Responsibility | Dec 2017 - Mar 2019 \\
+ JP Morgan Force For Good | Aug 2015 - Sept 2016 \\
+% HKN Lab Supplies Chair | Jan 2014 - Dec 2014 \\
+% ECE Undergraduate Tutoring\\
 %Epic Intentions: VP of Internal Affairs | June 2014 - May 2015 \\
 %Georgia Tech  Lorraine Student Government Webmaster | Jan 2013 - May 2013 \\
 \end{tabular}
