@@ -19,7 +19,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a4paper]{deedy-resume-openfont} % Use US Letter paper, change to a4paper for A4
+\documentclass[letterpaper]{deedy-resume-openfont} % Use US Letter paper, change to a4paper for A4
 
 \begin{document}
 
@@ -167,7 +167,9 @@ IEEE Member
     \item Scaled Dagster powered document processing workflow 10x (10k - 100k daily documents) 
     \item Developed provider agnostic LLM agentic workflows for key data extraction
     \item Created and distributed internal sdks to integrate datascience experiments in parallel with production pipeline work. 66\% reduction in time to deploy new models
+    \item Monolith -> micro services conversion using Temporal to orchastrate workflows
 \end{tightitemize}
+\vspace{\topsep}
 
 \runsubsection{Nautilus Biotechnology}\\
 \descript{Senior Software Engineer}
@@ -176,9 +178,11 @@ IEEE Member
 % \vspace{\topsep}
 \begin{tightitemize}
     \item Lead the data and integrations team in charge of collection, validation, storage and exposing the company's many scientific data
-    \item Built a code framework for building quick start, REST enabled, webapps on top of MS Oauth, Svelte, FastAPI, and AWS to stand up and deploy a constellation (3 and growing) of intercommunicating custom laboratory information management tools. This enabled a tight integration with science teams and expedited migration of their excel based workflows
+    \item Built a code framework for building quick start, REST enabled, webapps on top of MS Oauth, Svelte, FastAPI, and AWS 
+    to stand up and deploy a constellation of intercommunicating custom laboratory information management tools. This enabled a tight integration with stakeholder science teams and expedited migration of their excel based workflows
     \item Stood up AWS Athena data warehouse and bespoke connectors to unify disparate data stored across the company (Excel, Confluence, Benchling, etc) 
 \end{tightitemize}
+\vspace{\topsep}
 
 \runsubsection{Meta (Facebook Reality Labs)}\\
 \descript{Software Engineer}
@@ -193,23 +197,23 @@ IEEE Member
 \item Optimized the notification experience to allow for 10\% increase in battery life and 95\% delivery  rate with the use of transport proxies and connection management
 \end{tightitemize}
 
-\runsubsection{Beeswax}\\
-\descript{Senior Web Engineer}
+% \runsubsection{Beeswax}\\
+% \descript{Senior Web Engineer}
 
-\location{April 2019 - April 2020 | New York, NY}
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-% \begin{tightitemize}
-% \item Helmed modernization effort to port successful customer facing API from a custom PHP framework to Django (Python 3.8). Moved data model to be managed by Django migrations and set up facade framework to allow for API transitions
-% \item Built parallelized tooling to increase engineer productivity using new python migration framework across multi customer model
-% \item Continued developing features for existing PHP API and architecting the path towards entering maintenance
-% \end{tightitemize}
-\sectionspace % Some whitespace after the section
+% \location{April 2019 - April 2020 | New York, NY}
+% %\vspace{\topsep} % Hacky fix for awkward extra vertical space
+% % \begin{tightitemize}
+% % \item Helmed modernization effort to port successful customer facing API from a custom PHP framework to Django (Python 3.8). Moved data model to be managed by Django migrations and set up facade framework to allow for API transitions
+% % \item Built parallelized tooling to increase engineer productivity using new python migration framework across multi customer model
+% % \item Continued developing features for existing PHP API and architecting the path towards entering maintenance
+% % \end{tightitemize}
+% \sectionspace % Some whitespace after the section
 
-\runsubsection{T. Rowe Price}\\
-\descript{Platform Engineer}
+% \runsubsection{T. Rowe Price}\\
+% \descript{Platform Engineer}
 
-\location{August 2017 - March 2019 | New York, NY}
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \location{August 2017 - March 2019 | New York, NY}
+% %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 % \begin{tightitemize}
 % \item Developed, tested, and documented core Java framework to accelerate the rollout of GRPC based micro-services. This provides AuthN/Z, service discovery, and request management, allowing application developers to focus only on their business code.
 % \item Leveraged above Java custom framework to build aysnc, fault tolerant, cloud-native micro-services to collate disparate data and populate a React app, reducing analyst work flow time 95\% (2hr -> 5min)
@@ -217,27 +221,27 @@ IEEE Member
 % %\item Developed Horizon, a portfolio management tool powered by the aforementioned Java framework running as a cloud-native %dockerized Spring-Boot microservice in AWS. Backend Java work collected data from cloud based RDS, on prem MSSQL, and cloud based %GRPC services to expose portfolio modeling to a react powered frontend over both grpc and REST.  This served to reduce analyst %workflow time 95\%.
 % \item Improved internal engineering culture through functional programming evangelism
 
-% \end{tightitemize}
-\sectionspace % Some whitespace after the section
-
-\runsubsection{Enigma}\\
-\descript{API Engineer}
-
-\location{September 2016 - August 2017 | New York, NY}
-% %\vspace{\topsep} % Hacky fix for awkward extra vertical space
-% \begin{tightitemize}
-% \item Developed REST API for enterprise data lake search and exploration powered by Python Flask and Elastic Search
-% \item Delivered scalable product to be deployed both on enterprise internal servers and a public AWS cloud using both legacy
-% Ansible scripts and docker based containers.
-% \item Designed Taskflow (python workflow framework) scheduling to coordinate ingestion of multi-TB sized datasets
-
 %\end{tightitemize}
-\sectionspace % Some whitespace after the section
+% \sectionspace % Some whitespace after the section
 
-\runsubsection{JP Morgan Chase}\\
-\descript{Technology Analyst | Asset Management}
+% \runsubsection{Enigma}\\
+% \descript{API Engineer}
 
-\location{July 2015 - September 2016 | New York, NY}
+% \location{September 2016 - August 2017 | New York, NY}
+% % %\vspace{\topsep} % Hacky fix for awkward extra vertical space
+% % \begin{tightitemize}
+% % \item Developed REST API for enterprise data lake search and exploration powered by Python Flask and Elastic Search
+% % \item Delivered scalable product to be deployed both on enterprise internal servers and a public AWS cloud using both legacy
+% % Ansible scripts and docker based containers.
+% % \item Designed Taskflow (python workflow framework) scheduling to coordinate ingestion of multi-TB sized datasets
+
+% %\end{tightitemize}
+% \sectionspace % Some whitespace after the section
+
+% \runsubsection{JP Morgan Chase}\\
+% \descript{Technology Analyst | Asset Management}
+
+% \location{July 2015 - September 2016 | New York, NY}
 % %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 % \begin{tightitemize}
 % \item Streamlined process for data governance with the creation of a custom suite of tools written in Python for automatic data validation and recording
